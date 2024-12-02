@@ -1,0 +1,357 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #00539b;
+  --sub-color: #e57b15;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.container-s {
+  max-width: calc(100% - 40px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-ms {
+  max-width: calc(100% - 120px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-m {
+  max-width: calc(100% - 200px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.search input {
+  height: 40px;
+}
+.side-search h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header__navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.content__item {
+  border: 2px solid rgb(14, 202, 231);
+}
+
+.content__item + .content__item {
+  margin-top: 20px;
+}
+
+.content__item h4 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  font-size: 1.8rem;
+  color: rgb(14, 202, 231);
+  background: rgb(236, 233, 233);
+}
+
+.content__item > h4 img {
+  width: 20px;
+  height: 20px;
+}
+
+.content__item p {
+  margin-bottom: 15px;
+  padding: 0 10px;
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+.content__banner img {
+  width: 100%;
+}
+
+.heading {
+  margin: 10px 0;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 2.6rem;
+  color: rgb(14, 202, 231);
+  box-shadow: 0px 2px 5px 2px #5b5a5a;
+}
+
+.banner__item {
+  display: flex;
+  padding: 10px;
+  gap: 20px;
+  box-shadow: 0px 2px 5px 2px #5b5a5a;
+}
+
+.banner__item + .banner__item {
+  margin-top: 10px;
+}
+
+.banner__item-img {
+  width: 40%;
+}
+
+.banner__item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner__item-info {
+  width: 60%;
+}
+
+.banner__item-info h2 {
+  font-size: 2.2rem;
+  color: rgb(14, 202, 231);
+  margin-bottom: 15px;
+}
+
+.banner__item p {
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.banner__item-info h4 {
+  margin-top: 10px;
+  font-size: 1.6rem;
+  color: #faaf0d;
+}
+
+.booknow {
+  margin-top: 20px;
+  padding: 15px 8px;
+  background: rgb(14, 202, 231);
+  display: inline-block;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.4rem;
+  float: right;
+}
+
+.footer {
+  margin-top: 30px;
+  padding: 15px 0 10px;
+  text-align: center;
+  background: #0ec0c3;
+}
+
+.footer > div * {
+  margin-bottom: 10px;
+  color: white;
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    display: block;
+    text-align: center;
+  }
+  .search input {
+    margin-top: 20px;
+    height: 40px;
+  }
+  .side-search {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .content__right {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner__item {
+    flex-direction: column;
+  }
+  .banner__item-img {
+    width: 100%;
+  }
+  .banner__item-info {
+    width: 100%;
+  }
+  .booknow {
+    float: none;
+    margin-top: 10px;
+  }
+  .banner__item-info h2,
+  .banner__item-info p,
+  .banner__item-info h4 {
+    text-align: left;
+  }
+
+  .banner__item-info {
+    text-align: center;
+  }
+  .banner__item-info h2 {
+    font-size: 2.2rem;
+    color: rgb(14, 202, 231);
+    margin-bottom: 5px;
+  }
+  .banner__item {
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 572px) {
+  .container-fluid {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
